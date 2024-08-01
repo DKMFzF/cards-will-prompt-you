@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-.page {
-  min-inline-size: 360px;
-  margin: 0;
-  font-family: Raleway, normal, sans-serif;
-}
-
 h1,
 h2,
 h3,
@@ -24,11 +18,6 @@ blockquote,
 figure {
   margin: 0;
   padding: 0;
-}
-
-ul,
-ol {
-  list-style: none;
 }
 
 img {

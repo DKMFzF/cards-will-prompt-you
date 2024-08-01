@@ -2,51 +2,85 @@
   --bg-color: #f3efec;
   --text-color: #312a4e;
   --accent-color: #ffab6b;
-  --main-font: 'Raleway', normal, sans-serif;
-  --accent-font: 'STIXTwoText', bold, sans-serif;
+  --main-font: 'Raleway', sans-serif;
+  --accent-font: 'STIXTwoText', sans-serif;
+  --text-main-size: 18px;
 }
 
 .page {
-    min-inline-size: 360px;
-    margin: 0;
-    color: var(--text-color, black);
-    font-family: var(--main-font);
-    background-color: var(--bg-color, white);
+  min-inline-size: 360px;
+  margin: 0;
+  color: var(--text-color, black);
+  font-family: var(--main-font);
+  background-color: var(--bg-color, white);
 }
 
 .content-section {
-    padding: 0 5vi;
+  padding: 0 5vi;
 }
 
 .header {
-    padding-top: 10%;
+  padding-top: 10%;
 }
 
 .heading {
-    text-align: center;
-    font-family: var(--accent-font);
-    line-height: 90%;
+  text-align: center;
+  font-family: var(--accent-font, sans-serif);
+  line-height: 90%;
 }
 
 .header__title {
-    margin-bottom: 40px;
-    font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+  margin-bottom: 40px;
+  font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
 }
 
 .content__title {
-    margin-top: 7%;
-    margin-bottom: 2.5%;
-    font-size: 30px;
+  margin-top: 7%;
+  margin-bottom: 2.5%;
+  font-size: 30px;
 }
 
 .content__text-block {
-    font-size: 18px;
+  font-size: var(--text-main-size, 18px);
 }
 
-.content__text-block > .content__paragraph {
-    margin-bottom: 1.5em;
+.content__text-block .content__paragraph:not(:last-child) {
+  margin-bottom: 1.5em;
 }
 
 .paragraph-link {
-    color: inherit;
+  color: inherit;
+}
+
+.content__blockquote {
+  margin: 0 auto 1.5em;
+  width: 75%;
+  font-family: var(--main-font, sans-serif);
+  font-style: italic;
+  line-height: 200%;
+}
+
+.content__list {
+  list-style: none;
+}
+
+.content-list__item {
+  position: relative;
+  padding-inline-start: 40px;
+}
+
+.content-list__item::before {
+  position: absolute;
+  inset: 50% 0 -50% 1%;
+  transform: translateY(-50%); /* Центрируем по вертикали */
+  width: 15px; /* Ширина маркера */
+  height: 15px; /* Высота маркера */
+  content: ''; /* Убираем текстовое содержимое */
+  background-image: url(../images/marker-light.svg); /* Фоновая картинка */
+  background-size: cover; /* Подгоняем изображение под размер квадрата */
+  background-repeat: no-repeat; /* Убираем повторение фонового изображения */
+}
+
+.content__list .content-list__item:not(:last-child) {
+  margin-bottom: 10px;
 }
