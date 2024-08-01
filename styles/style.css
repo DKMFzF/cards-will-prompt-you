@@ -60,6 +60,15 @@
   line-height: 200%;
 }
 
+.content__text-block_type_first-lettered::first-letter {
+  margin-right: 1px;
+  padding: 0 4px;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: var(--accent-color, #ffab6b);
+}
+
 .content__list {
   list-style: none;
 }
@@ -72,13 +81,13 @@
 .content-list__item::before {
   position: absolute;
   inset: 50% 0 -50% 1%;
-  transform: translateY(-50%); /* Центрируем по вертикали */
-  width: 15px; /* Ширина маркера */
-  height: 15px; /* Высота маркера */
-  content: ''; /* Убираем текстовое содержимое */
-  background-image: url(../images/marker-light.svg); /* Фоновая картинка */
-  background-size: cover; /* Подгоняем изображение под размер квадрата */
-  background-repeat: no-repeat; /* Убираем повторение фонового изображения */
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  content: '';
+  background-image: url(../images/marker-light.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .content__list .content-list__item:not(:last-child) {
