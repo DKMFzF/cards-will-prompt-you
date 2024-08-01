@@ -93,3 +93,19 @@
 .content__list .content-list__item:not(:last-child) {
   margin-bottom: 10px;
 }
+
+.content__figure {
+  margin: 7% 0;
+  width: calc(100% + 10vi);
+  transform: translateX(-5vi);
+}
+
+.content__picture {
+  width: inherit;
+}
+
+.content__picture-caption {
+  border-bottom: 1px solid var(--text-color, #000);
+  padding: 20px 0;
+  text-align: center;
+}
