@@ -7,17 +7,19 @@ window.onload = () => {
   const themeInLocal = localStorage.getItem('theme');
   if (themeInLocal) {
     setDarkTheme();
-  } else {
+  }
+
+ else {
     setLightTheme();
   }
 };
 
-lightThemeBtn.onclick = () => {
+lightthemebtn.onclick = () => {
   setLightTheme();
   localStorage.removeItem('theme');
 };
 
-darkThemeBtn.onclick = () => {
+darkthemebtn.onclick = () => {
   setDarkTheme();
   localStorage.setItem('theme', 'dark');
 };
