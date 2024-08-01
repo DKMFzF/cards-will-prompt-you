@@ -23,6 +23,41 @@
   padding-top: 10%;
 }
 
+.header__menu {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+}
+
+.header__theme-toggler {
+    list-style: none;
+}
+
+.header__theme-toggler__list {
+    display: inline;
+}
+
+.header__theme-button {
+    font-family: inherit;
+    color: currentColor;
+    
+}
+
+.header__theme-button_type_dark {
+    
+}
+
+.header__theme-button_type_light {
+    
+}
+
+.header__theme-button_is-active {
+
+}
+
 .heading {
   text-align: center;
   font-family: var(--accent-font, sans-serif);
