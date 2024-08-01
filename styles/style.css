@@ -105,7 +105,37 @@
 }
 
 .content__picture-caption {
-  border-bottom: 1px solid var(--text-color, #000);
+  border-bottom: 1px solid currentColor;
   padding: 20px 0;
+  text-align: center;
+}
+
+.content__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 7%;
+  aspect-ratio: 4 / 3;
+  border: 1px solid currentColor;
+}
+
+.content__card-title {
+  position: relative;
+  z-index: 0;
+  font-size: 60px;
+}
+
+/* .colored-text::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 60% 0 0 min(49%, 59%);
+    width: min(3.7em, 5em) ;
+    height: 1rem;
+    background-color: var(--accent-color, #ffab6b);
+    white-space: ;
+} */
+
+.content__card-subtitle {
   text-align: center;
 }
