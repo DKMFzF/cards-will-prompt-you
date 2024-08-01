@@ -1,0 +1,38 @@
+@font-face {
+  font-family: Raleway;
+  src: url(./raleway_bold.eot);
+  src:
+    url(./raleway_bold.eot#iefix) format('embedded-opentype'),
+    url(./raleway_bold.woff2) format('woff2'),
+    url(./raleway_bold.woff) format('woff'),
+    url(./raleway_bold.ttf) format('truetype'),
+    url(./raleway_bold.svg#raleway_bold) format('svg');
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url(./raleway_regular.eot);
+  src:
+    url(./raleway_regular.eot?#iefix) format('embedded-opentype'),
+    url(./raleway_regular.woff2) format('woff2'),
+    url(./raleway_regular.woff) format('woff'),
+    url(./raleway_regular.ttf) format('truetype'),
+    url(./raleway_regular.svg#raleway_regular) format('svg');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: STIXTwoText;
+  src: url(./stixtwotext-semibold.eot);
+  src:
+    url(./stixtwotext-semibold.eot#iefix) format('embedded-opentype'),
+    url(./stixtwotext-semibold.woff2) format('woff2'),
+    url(./stixtwotext-semibold.woff) format('woff'),
+    url(./stixtwotext-semibold.ttf) format('truetype'),
+    url(./stixtwotext-semibold.svg#stixtwotext-semibold) format('svg');
+  font-weight: bold;
+  font-display: swap;
+}
