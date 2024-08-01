@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-body {
+.page {
+  min-inline-size: 360px;
+  margin: 0;
   font-family: Raleway, normal, sans-serif;
 }
 
@@ -18,7 +20,8 @@ p,
 ul,
 ol,
 li,
-blockquote {
+blockquote,
+figure {
   margin: 0;
   padding: 0;
 }
