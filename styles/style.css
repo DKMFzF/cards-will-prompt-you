@@ -24,38 +24,42 @@
 }
 
 .header__menu {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid currentColor;
-    border-bottom: 1px solid currentColor;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-block-start: 1px solid currentColor;
+  border-block-end: 1px solid currentColor;
 }
 
 .header__theme-toggler {
-    list-style: none;
-}
-
-.header__theme-toggler__list {
-    display: inline;
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
 
 .header__theme-button {
-    font-family: inherit;
-    color: currentColor;
-    
-}
-
-.header__theme-button_type_dark {
-    
-}
-
-.header__theme-button_type_light {
-    
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  background-color: transparent;
+  color: currentColor;
 }
 
 .header__theme-button_is-active {
+  position: relative;
+  font-weight: bold;
+}
 
+.header__theme-button_is-active::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inline-size: 90%;
+  block-size: 0.5ch;
+  background-color: var(--accent-color, #ffab6b);
+  inset-block-end: 0.3ch;
+  inset-inline-start: 3px;
 }
 
 .heading {
@@ -149,27 +153,31 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 7%;
-  aspect-ratio: 4 / 3;
+  align-items: center;
+  margin-block-start: 7%;
   border: 1px solid currentColor;
+  aspect-ratio: 4 / 3;
 }
 
 .content__card-title {
-  position: relative;
-  z-index: 0;
   font-size: 60px;
 }
 
-/* .colored-text::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    inset: 60% 0 0 min(49%, 59%);
-    width: min(3.7em, 5em) ;
-    height: 1rem;
-    background-color: var(--accent-color, #ffab6b);
-    white-space: ;
-} */
+.colored-text {
+  display: inline-block;
+  position: relative;
+}
+
+.colored-text::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inline-size: calc(100% + 8px);
+  block-size: 0.5ch;
+  background-color: var(--accent-color, #ffab6b);
+  inset-block-end: 0.3ch;
+  inset-inline-start: -4px;
+}
 
 .content__card-subtitle {
   text-align: center;
