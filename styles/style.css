@@ -193,3 +193,14 @@
 .content__card-subtitle {
   text-align: center;
 }
+
+.footer {
+  border-block-start: 1px solid currentColor;
+  margin-block-start: 10%;
+}
+
+.footer__copyright {
+  padding: 2.5%;
+  text-align: center;
+  text-transform: uppercase;
+}
