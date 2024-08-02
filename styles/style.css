@@ -38,12 +38,19 @@
   list-style: none;
 }
 
+.header__theme-toggler__list-item {
+  display: flex;
+}
+
 .header__theme-button {
   cursor: pointer;
+  display: inline-block;
+  padding: 0;
   border: none;
   font-family: inherit;
   background-color: transparent;
   color: currentColor;
+  font-size: 18px;
 }
 
 .header__theme-button_is-active {
@@ -59,7 +66,7 @@
   block-size: 0.5ch;
   background-color: var(--accent-color, #ffab6b);
   inset-block-end: 0.3ch;
-  inset-inline-start: 3px;
+  inset-inline-start: 3.9px;
 }
 
 .heading {
