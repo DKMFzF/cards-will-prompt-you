@@ -9,7 +9,8 @@
     "lint": "stylelint './**/*.{css,js}'",
     "lintfix": "stylelint './**/*.{css,js}' --fix",
     "checkAll": "npm run check && npm run lint",
-    "fixAll": "npm run format && npm run lintfix"
+    "fixAll": "npm run format && npm run lintfix",
+    "push": "git push origin master"
   },
   "author": "Doroshev Kirill",
   "license": "ISC",
